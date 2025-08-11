@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz</title>
+</head>
+<body>
+           <script>
+  const estudante = {
+  alunos: [
+    {name:"Isabela", curso:["DS"], turno:["Manhã"]},
+    {name:"Gabriel", curso:["Famarcia"], turno:["Tarde"]},
+    {name:"Lucas", curso:["Famarcia"], turno:["Manhã"]},
+    {name:"Pedro", curso:["DS"], turno:["Tarde"]},
+    {name:"Mateus", curso:["DS"], turno:["Manhã"]}
+
+  ],
+  materia: [
+    {portugues:"Portugues", matematica:"Matematica", quimica:"Quimica", biologia:"Biologia", geografia:"Geografia"}
+  ],
+  Trimestre: [
+    {trimestre1:" 1°T", trimestre2:" 2°T", trimestre3:" 3°T"}
+  ],
+  nota:[
+    {name:"10", nota2:["8,2"], nota3:["4,7"], nota4:["7,4"], nota5:["10"]},
+  ]
+
+}            
+
+        function exibe(){
+            let x = "";
+        document.write("<table border=1>");
+
+            document.write("<tr>");    
+               document.write("<td>");
+                    document.write("Alunos: "); 
+               document.write("</td>");  
+               
+               document.write("<td>");
+                    document.write("Curso: "); 
+               document.write("</td>");
+               
+               document.write("<td >");
+                    document.write("Turno: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Trimestre: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Trimestre: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Trimestre: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Materia: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Nota: "); 
+               document.write("</td>");
+
+               
+
+            document.write("</tr>"); 
+
+
+            for(let i in estudante.alunos){
+
+                // x++;
+            document.write("<tr>");    
+               document.write("<td>");
+                    document.write(estudante.alunos[i].name); 
+               document.write("</td>");  
+               
+               for(let j in estudante.alunos[i].curso){
+               document.write("<td>");
+                    document.write(estudante.alunos[i].curso[j]); 
+               document.write("</td>");
+               }  
+
+               for(let z in estudante.alunos[i].turno){
+               document.write("<td>");
+                    document.write(estudante.alunos[i].turno[z]); 
+               document.write("</td>");
+               }  
+
+               for(let a in estudante.Trimestre){
+               document.write("<td>");
+                    document.write(estudante.Trimestre[a].trimestre1); 
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].portugues); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].name); 
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].matematica); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].nota2); 
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].quimica); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].nota3); 
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].biologia); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].nota4); 
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].geografia); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].nota5); 
+               document.write("</td>");
+               }
+
+               for(let a in estudante.Trimestre){
+               document.write("<td>");
+                    document.write(estudante.Trimestre[a].trimestre2); 
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].portugues); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].nota2); 
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].matematica); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].nota3); 
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].quimica); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].nota5); 
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].biologia); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].nota2);
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].geografia); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].name); 
+               document.write("</td>");
+               }
+
+               for(let a in estudante.Trimestre){
+               document.write("<td>");
+                    document.write(estudante.Trimestre[a].trimestre3); 
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].portugues); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].nota4); 
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].matematica); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].name); 
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].quimica); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].nota5); 
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].biologia); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].nota3); 
+               document.write("</td>");
+               }
+
+               for(let o in estudante.materia){
+               document.write("<td>");
+                    document.write(estudante.materia[o].geografia); 
+               document.write("</td>");
+               }
+
+               for(let n in estudante.nota){
+               document.write("<td>");
+                    document.write(estudante.nota[n].nota2); 
+               document.write("</td>");
+               }
+
+
+               document.write("</tr>");
+            } 
+
+
+            
+        document.write("</table>");    
+
+
+        }        
+
+exibe();
+        </script>
+
+
+</body>
+</html>

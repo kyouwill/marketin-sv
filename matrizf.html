@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz</title>
+</head>
+<body>
+           <script>
+  const estudante = {
+  Redes: [
+    {name:"Temu", curso:["5.000"], turno:["26"], materia:["2M"]},
+    {name:"Shoppe", curso:["12.000"], turno:["105"], materia:["3,6M"]},
+    {name:"Instagram", curso:["8.500"], turno:["63"], materia:["4,2M"]},
+    {name:"Facebook", curso:["9.500"], turno:["15"], materia:["1,2M"]},
+    {name:"Tik Tok", curso:["10.000"], turno:["269"], materia:["10,8M"]}
+  ]
+
+}            
+
+        function exibe(){
+            let x = "";
+        document.write("<table border=1>");
+
+            document.write("<tr>");    
+               document.write("<td>");
+                    document.write("Redes: "); 
+               document.write("</td>");  
+               
+               document.write("<td>");
+                    document.write("Valor ganho: "); 
+               document.write("</td>");
+               
+               document.write("<td >");
+                    document.write("Membros: "); 
+               document.write("</td>");
+
+               document.write("<td >");
+                    document.write("Visualização: "); 
+               document.write("</td>");
+
+                       
+
+            document.write("</tr>"); 
+
+
+            for(let i in estudante.Redes){
+
+                // x++;
+            document.write("<tr>");    
+               document.write("<td>");
+                    document.write(estudante.Redes[i].name); 
+               document.write("</td>");  
+               
+               for(let j in estudante.Redes[i].curso){
+               document.write("<td>");
+                    document.write(estudante.Redes[i].curso[j]); 
+               document.write("</td>");
+               }  
+
+               for(let z in estudante.Redes[i].turno){
+               document.write("<td>");
+                    document.write(estudante.Redes[i].turno[z]); 
+               document.write("</td>");
+               }  
+
+
+               for(let b in estudante.Redes[i].materia){
+               document.write("<td>");
+                    document.write(estudante.Redes[i].materia[b]); 
+               document.write("</td>");
+               }
+
+             
+               }
+
+               document.write("</tr>");
+            } 
+
+
+            
+        document.write("</table>");           
+
+exibe();
+        </script>
